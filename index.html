@@ -22,7 +22,11 @@
       <h1>
 <a id="synology" class="anchor" href="#synology" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Synology</h1>
 
-<p>This is a Synology API Wrapper for .NET.</p>
+<p><a href="http://waffle.io/Ar3sDevelopment/Synology"><img src="https://badge.waffle.io/Ar3sDevelopment/Synology.png?label=ready&amp;title=Ready" alt="Stories in Ready"></a></p>
+
+<p><a href="http://waffle.io/Ar3sDevelopment/Synology"><img src="https://badge.waffle.io/Ar3sDevelopment/Synology.svg?label=in%20progress&amp;title=In%20Progress" alt="Stories in Progress"></a></p>
+
+<p>This is an implementation of Synology APIs for .NET projects.</p>
 
 <h2>
 <a id="pull-request-will-be-accepted-only-if-targeting-dev-branch" class="anchor" href="#pull-request-will-be-accepted-only-if-targeting-dev-branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pull request will be accepted only if targeting <code>dev</code> branch.</h2>
@@ -131,8 +135,7 @@
         {
             DownloadStationTests(syno);
 
-            <span class="pl-c">//FileStation APIs have some issues with DSM 6</span>
-            <span class="pl-c">//FileStationTests(syno);</span>
+            FileStationTests(syno);
 
             Console.WriteLine(<span class="pl-s"><span class="pl-pds">"</span>Auth Logout<span class="pl-pds">"</span></span>);
             <span class="pl-k">var</span> resLogout = syno.Api().Auth().Logout();
